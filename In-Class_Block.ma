@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
 //Name: In-Class_Block.ma
-//Last modified: Wed, Feb 13, 2019 02:29:40 PM
+//Last modified: Wed, Feb 13, 2019 02:55:06 PM
 //Codeset: 1252
 requires maya "2018ff09";
 requires "mtoa" "3.1.1.1";
@@ -14,8 +14,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "4A8DC213-4779-361D-663A-F0BD3BE86D9C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 37.780177633864369 25.246661577560424 -41.085634522183689 ;
-	setAttr ".r" -type "double3" 335.66164727053115 -222.59999999992158 0 ;
+	setAttr ".t" -type "double3" 40.349531085763516 17.438041510767015 -42.668432785564079 ;
+	setAttr ".r" -type "double3" 343.46164727052457 -223.39999999991343 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F8951AAA-4C7E-7AAB-52DE-15B8EC3538A4";
 	setAttr -k off ".v" no;
