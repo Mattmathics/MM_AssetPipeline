@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
 //Name: WoodCar.ma
-//Last modified: Mon, Mar 25, 2019 02:23:55 PM
+//Last modified: Mon, Mar 25, 2019 02:34:15 PM
 //Codeset: 1252
 requires maya "2018ff09";
 requires "mtoa" "3.1.1.1";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D7823BF7-4F33-0BE0-175A-09B2D4DE7EC5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 21.577867788630712 8.7364402072200011 12.420692611993077 ;
-	setAttr ".r" -type "double3" -378.93835302265785 -9662.1999999999261 2.9843275299497616e-15 ;
+	setAttr ".t" -type "double3" 24.200655614658565 8.6781141146132814 16.292829536172441 ;
+	setAttr ".r" -type "double3" -378.3383530217809 -9664.599999999371 -2.8005544740275646e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "699B96F5-4A72-37AF-9014-F58E442113CC";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 26.819976806594632;
+	setAttr ".coi" 29.154120215885857;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -6547,12 +6547,15 @@ createNode mesh -n "pCube34Shape" -p "pCube34";
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.50000001490116119 0.99956125020980835 ;
+	setAttr ".pv" -type "double2" 0.41037517786026001 1.0628219842910767 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 3 ".pt";
+	setAttr ".pt[174]" -type "float3" 0 0.1372391 0 ;
+	setAttr ".pt[240]" -type "float3" 0 0.13723898 0 ;
 	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCylinder23";
